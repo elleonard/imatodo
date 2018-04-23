@@ -1,0 +1,16 @@
+<nav>
+  <ul id="menu" class="clearfix">
+  <li {% if page.type == "home" %}class="current"{% endif %}>
+    <a href={% if page.type == "home" %}""{% else %}{{ site.github.url }}{% endif %}>Home</a>
+  </li>
+  <li {% if page.type == "diary" %}class="current"{% endif %}>
+    <a href={% if page.type == "diary" %}""{% else %}{{ site.github.url }}/diary{% endif %}>日誌</a>
+  </li>
+  <li {% if page.type == "imatodo" %}class="current"{% endif %}>
+    <a href={% if page.type == "imatodo" %}""{% else %}{{ site.github.url }}/imatodo{% endif %}>今届</a>
+  </li>
+  <li {% if page.type == "link" %}class="current"{% endif %}>
+    <a href={% if page.type == "link" %}""{% else %}{{ site.github.url }}/link.html{% endif %}>リンク</a>
+  </li>
+  </ul>
+</nav>
