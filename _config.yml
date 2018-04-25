@@ -24,7 +24,6 @@ github_username:  elleonard
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
 
